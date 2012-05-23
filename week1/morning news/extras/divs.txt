@@ -1,0 +1,18 @@
+- banner
+
+- container
+	- leftcolumn
+		- header
+		- current
+		- nav
+		- searchbar
+		- article-header
+		- article-main
+		- article-preview
+	- rightcolumn
+		- adbox
+		- updates
+		- feedheader
+		- articlefeed
+		- feedfooter
+	- footer

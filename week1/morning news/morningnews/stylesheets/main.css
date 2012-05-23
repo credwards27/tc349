@@ -1,0 +1,318 @@
+/* Meta */
+
+html {
+}
+
+body {
+    background: url(../images/template-sections.png);
+    background: #ffffff;
+    margin: 0;
+    
+    font-family: Tahoma, Geneva, "MS Sans Serif", sans-serif;
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+::selection {
+    background: #ff0000;
+}
+
+::-moz-selection {
+    background: #ff0000;
+}
+
+/* Layout */
+
+#banner {
+    background: #ff0f2c;
+    padding: 5px 0;
+    width: 100%;
+    height: 40px;
+    
+    color: #ffffff;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.2;
+}
+#banner a:link, #banner a:visited {
+    color: #ffffff;
+}
+#banner a:hover, #banner a:active {
+    color: #000000;
+}
+#banner p {
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+}
+
+#container {
+    margin: 0 auto;
+    width: 900px;
+    font-size: 1.4em;
+}
+    
+    #leftcolumn {
+        float: left;
+        width: 630px;
+    }
+        
+        #header {
+            background: url(../images/elements/header.jpg);
+            height: 99px;
+        }
+        
+        #current {
+            padding: 0 0 5px;
+            border-bottom: 1px solid #000000;
+            
+            color: #666666;
+            font-size: 0.9em;
+            text-align: center;
+        }
+        #current p {
+            margin: 0;
+        }
+        #current a:link, #current a:visited, #current a:hover, #current a:active {
+            color: #999999;
+            text-decoration: none;
+        }
+        #current a.redlink:hover {
+            color: #ff0000;
+        }
+        
+        #nav {
+            float: left;
+            margin: 0 0 14px;
+            padding: 0;
+            width: 393px;
+            
+            color: #333333;
+        }
+        #nav ul {
+            margin: 13px 0 0;
+            padding: 0;
+        }
+        #nav li {
+            display: inline-block;
+        }
+        #nav a {
+            padding: 0.3em;
+        }
+        #nav a:link, #nav a:visited {
+            color: #333333;
+            text-decoration: none;
+        }
+        #nav a:hover, #nav a:active {
+            background: #000000;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        #searchbar {
+            float: right;
+            margin: 0 0 14px;
+        }
+            
+            #searchbox {
+                background: url(../images/elements/searchbar.jpg);
+                margin: 9px 6px;
+                width: 220px;
+                height: 25px;
+                border: 1px solid #cccccc;
+                
+                color: #999999;
+                font-size: 0.85em;
+            }
+        
+        .article-header {
+            clear: both;
+            background: #000000;
+            margin: 0;
+            padding: 3px 6px;
+            
+            color: #ffffff;
+            font-size: 0.9em;
+        }
+        .article-header p {
+            margin: 0;
+        }
+        
+        .article-main {
+            background: url(../images/content/london.jpg) no-repeat;
+            margin: 0;
+            padding: 300px 20px 13px;
+        }
+        
+        .article-preview {
+            background: #000000;
+            padding: 20px;
+        }
+    
+    #rightcolumn {
+        float: right;
+        margin-left: 10px;
+        width: 260px;
+    }
+        
+        #adbox {
+            background: url(../images/elements/light-gray.png);
+            padding: 9px;
+            width: 242px;
+            min-height: 146px;
+            
+            font-size: 0.8em;
+            line-height: 1.3em;
+        }
+        #adbox p {
+            color: #999999;
+        }
+        #adbox a:link, #adbox a:visited {
+            color: #ff0000;
+        }
+        #adbox a:hover {
+            color: #000000;
+        }
+        
+        #updates {
+            padding: 5px;
+            
+            color: #999999;
+            font-size: 0.9em;
+        }
+        
+        #feedheader {
+            padding: 10px;
+            width: 240px;
+        }
+        
+        #feedheaderdate {
+            float: left;
+            
+            color: #999999;
+            text-align: center;
+        }
+        
+        #feedheadertime {
+            margin-top: -5px;
+            
+            color: #333333;
+            font-size: 0.9em;
+            font-weight: 700;
+            text-align: center;
+        }
+        
+        #articlefeed {
+            clear: both;
+            padding: 10px;
+            width: 240px;
+            
+            font-size: 0.9em;
+        }
+        #articlefeed a:link {
+            color: #000000;
+        }
+        #articlefeed a:visited {
+            color: #999999;
+        }
+        #articlefeed a:hover .feedbox {
+            border-top: 1px solid #000000;
+            border-bottom: 1px solid #000000;
+        }
+        
+        #feedfooter {
+            padding: 10px;
+            width: 240px;
+            
+            font-size: 0.8em;
+        }
+        #feedfooter a:link, #feedfooter a:visited {
+            color: #ff0000;
+            font-size: 1.2em;
+        }
+        #feedfooter a:hover {
+            color: #000000;
+            font-size: 1.2em;
+        }
+    
+    #footer {
+        clear: both;
+        background: #000000;
+        padding: 10px 30px;
+        min-height: 118px;
+        
+        color: #ffffff;
+    }
+    .logo {
+        float: left;
+        font-family: "Courier New", Times, serif;
+        font-size: 7em;
+        font-weight: 700;
+    }
+    .footertext {
+        font-size: 1.2em;
+    }
+
+/* Style Classes */
+
+.articlelink:hover .h1-ar {
+    color: #ff0000;
+}
+.articlelink:hover .h3-ar {
+    color: #ffffff;
+}
+
+.h1-ar {
+    color: #ffffff;
+    font-size: 5.8em;
+    line-height: 1.1em;
+}
+
+.h2-ar {
+    margin: 0;
+    
+    color: #ffffff;
+    font-family: "Palatino Linotype", Palatino, "Times New Roman", Times, serif;
+    font-size: 2em;
+    font-style: italic;
+}
+
+.h3-ar {
+    margin: 0;
+    
+    color: #cccccc;
+    font-family: "Palatino Linotype", Palatino, "Times New Roman", Times, serif;
+    font-size: 1.5em;
+}
+
+.updatefeeds {
+    display: inline;
+    margin-left: 10px;
+    
+    color: #999999;
+    font-size: 0.9em;
+}
+
+.bumper {
+    margin-bottom: 75px;
+}
+
+.ad-img {
+    float: left;
+    margin-right: 9px;
+    margin-bottom: 9px;
+}
+
+.first {
+    margin-top: 0;
+}
+
+.last {
+    margin-bottom: 0;
+}
+
+.topborder {
+    border-top: 1px solid #000000;
+}
