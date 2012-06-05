@@ -1,0 +1,1 @@
+- happens when float: left is added to #sweden <article> and #sweden dl <article>

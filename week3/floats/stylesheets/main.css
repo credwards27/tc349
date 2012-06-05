@@ -1,0 +1,52 @@
+#sweden {
+    float: left;
+    width: 304px;
+    padding: 10px 0;
+    background: url(../images/bg.png) no-repeat top left;
+}
+#sweden dl {
+    float: left;
+    margin: 10px 20px;
+    padding: 0;
+}
+#sweden dt {
+    float: right;
+    width: 162px;
+    margin: 0;
+    padding: 0;
+    font-size: 130%;
+    letter-spacing: 1px;
+    color: #627081;
+}
+#sweden dd {
+    margin: 0 0 0 98px;
+    padding: 0;
+    font-size: 85%;
+    line-height: 1.5em;
+    color: #666666;
+}
+#sweden dl dd.image {
+    margin: 0;
+}
+#sweden dd.image img {
+    float: left;
+    margin: 0 8px 0 0;
+    padding: 4px;
+    border: 1px solid #d9e0e6;
+    border-bottom-color: #c8cdd2;
+    border-right-color: #c8cdd2;
+    background: #ffffff;
+}
+
+/* reverse float */
+
+#sweden .alt dt {
+    float: left;
+}
+#sweden .alt dd {
+    margin: 0 98px 0 0;
+}
+#sweden .alt dd.image img {
+    float: right;
+    margin: 0 0 0 8px;
+}
