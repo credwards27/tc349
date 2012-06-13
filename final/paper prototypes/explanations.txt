@@ -1,0 +1,7 @@
+Home Page
+
+The home page, which is also "The Cakes" in the navigation tabs, acts as a sort of PR and general information page. It tells customers a bit about the cakes, with access to galleries of past jobs as well as the most recent things people have been ordering. The top header features testimonials from customers to increase interest and show popularity of the company. Every page also includes a "Your Order" login to allow customers to make changes and track progress of their own cakes.
+
+Order Page
+
+The "Orders" tab takes customers to a page where they can build and order their own cakes for any occasion. The main order form allows them to choose either a basic or custom cake design, and gives options for designing the cake to their specific needs. While "Basic Cake" has simple "template" customization options, "Custom Cake" gives customers the ability to specify more specialized needs and to set up consultation meetings to discuss designs (if desired). The right side gives instructions for how to fill out and complete orders, depending on which cake order type is selected.
