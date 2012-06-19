@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Schedule Buddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Schedule Buddy</a>
+          <div class="nav-collapse">
+            <ul class="nav pull-right">
+              <a class="btn btn-inverse" href=""><li>Help</li></a>
+              <a class="btn btn-inverse" href=""><li>Sign Out</li></a>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="row">
+        <div class="span12">
+          <h1>My ToDo Lists</h1>
+          <a href="">Add List</a>
+          <br />
+          <br />
+        </div> <!-- end span12 column -->
+      </div> <!-- end row -->
+      
+      <div class="row">
+        
+        <div class="span2">
+          <h3>Filter Tasks</h3>
+          <br />
+          <ul class="nav nav-pills nav-stacked">
+            <li class="active">
+              <a href="">All</a>
+            </li>
+            <li>
+              <a href="">Priority</a>
+            </li>
+            <li>
+              <a href="">Not Complete</a>
+            </li>
+            <li>
+              <a href="">Complete</a>
+            </li>
+          </ul>
+          
+        </div> <!-- end span2 column -->
+        
+        <div class="span10">
+          <ul class="nav nav-tabs">
+            <li class="active">
+              <a href="">Shopping List</a>
+            </li>
+            <li>
+              <a href="">Packing List</a>
+            </li>
+            <li>
+              <a href="">Game Project</a>
+            </li>
+          </ul>
+          
+          <form class="well form-inline">
+            <h5>Sort by:</h5>
+            <fieldset>
+              
+              <select id="select01">
+                <option>Select</option>
+                <option>Task Name</option>
+                <option>Deadline</option>
+                <option>Priority</option>
+                <option>Not Complete</option>
+                <option>Complete</option>
+              </select>
+              
+              <button type="submit" class="btn">Update</button>
+              
+            </fieldset>
+          </form>
+          
+          <form>
+            <table class="table table-bordered table-striped table-condensed">
+              <thead>
+                <tr>
+                  <th>Complete</th>
+                  <th>Priority</th>
+                  <th>Task Name</th>
+                  <th>Task Notes</th>
+                  <th>Deadline</th>
+                  <th>Edit</th>
+                </tr>
+              </thead>
+              
+                <tr>
+                  <td><input type="checkbox"></td> <!-- complete -->
+                  <td><input type="checkbox"></td> <!-- priority -->
+                  
+                  <td>Milk</td> <!-- task name -->
+                  <td>2&#37; only</td> <!-- task notes -->
+                  <td></td> <!-- deadline -->
+                  
+                  <td>
+                    <a class="btn btn-primary" href="">Edit</a>
+                  </td> <!-- edit -->
+                </tr>
+                
+                <tr>
+                  <td><input type="checkbox"></td> <!-- complete -->
+                  <td><input type="checkbox"></td> <!-- priority -->
+                  
+                  <td>Bread</td> <!-- task name -->
+                  <td>Wheat or multigrain</td> <!-- task notes -->
+                  <td></td> <!-- deadline -->
+                  
+                  <td>
+                    <a class="btn btn-primary" href="">Edit</a>
+                  </td> <!-- edit -->
+                </tr>
+                
+                <tr>
+                  <td><input type="checkbox"></td> <!-- complete -->
+                  <td><input type="checkbox"></td> <!-- priority -->
+                  
+                  <td>Cake Mix</td> <!-- task name -->
+                  <td>Yellow, 2 boxes</td> <!-- task notes -->
+                  <td></td> <!-- deadline -->
+                  
+                  <td>
+                    <a class="btn btn-primary" href="">Edit</a>
+                  </td> <!-- edit -->
+                </tr>
+            </table>
+          </form>
+          
+          <form class="form-inline">
+            <fieldset>
+              
+              <legend>New Task</legend>
+              <div class="control-group">
+                <label class="control-label">Task Name</label>
+                <div class="controls">
+                  <input type="text" class="input-large">
+                </div>
+              </div>
+              
+              <div class="control-group">
+                <label class="control-label">Priority</label>
+                <div class="controls">
+                  <input type="checkbox" value="priority">
+                </div>
+              </div>
+              
+              <div class="control-group">
+                <label class="control-label">Task Notes</label>
+                <div class="controls">
+                  <textarea class="input-xlarge" rows="3"></textarea>
+                </div>
+              </div>
+              
+              <div class="control-group">
+                <label class="control-label">Deadline</label>
+                <div class="controls">
+                  <label class="checkbox">
+                    <input type="checkbox" value="deadline">
+                      Check to add deadline
+                  </label>
+                </div>
+                <br />
+                <div class="controls">
+                  <select class="input-small">
+                    <option>Month</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                  </select>
+                  
+                  <select class="input-small">
+                    <option>Day</option>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                  </select>
+                </div>
+                <br />
+                
+                <div class="controls">
+                  <select class="input-medium">
+                    <option>Time (hours)</option>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                  </select>
+                  
+                  <select class="input-medium">
+                    <option>Time (minutes)</option>
+                    <option>00</option>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                    <option>32</option>
+                    <option>33</option>
+                    <option>34</option>
+                    <option>35</option>
+                    <option>36</option>
+                    <option>37</option>
+                    <option>38</option>
+                    <option>39</option>
+                    <option>40</option>
+                    <option>41</option>
+                    <option>42</option>
+                    <option>43</option>
+                    <option>44</option>
+                    <option>45</option>
+                    <option>46</option>
+                    <option>47</option>
+                    <option>48</option>
+                    <option>49</option>
+                    <option>50</option>
+                    <option>51</option>
+                    <option>52</option>
+                    <option>53</option>
+                    <option>54</option>
+                    <option>55</option>
+                    <option>56</option>
+                    <option>57</option>
+                    <option>58</option>
+                    <option>59</option>
+                  </select>
+                  
+                  <select class="input-small">
+                    <option>a.m.</option>
+                    <option>p.m.</option>
+                  </select>
+                </div>
+              </div>
+              <br />
+              
+              <div class="control-group">
+                <button type="submit" class="btn btn-primary">Add Task</button>
+                <button class="btn">Cancel</button>
+              </div>
+              
+            </fieldset>
+          </form>
+          
+        </div> <!-- end span10 column -->
+        
+      </div> <!-- end row -->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Schedule Buddy 2012</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
