@@ -1,0 +1,50 @@
+body {
+    background: #666666;
+    margin: 0;
+    
+    color: #ffffff;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+#screen {
+    position: relative;
+    background: #ffffff;
+    width: 720px;
+    height: 480px;
+    margin:  40px auto;
+    
+    border: 8px solid #000000;
+}
+
+#box {
+    background: #ffffff;
+    width: 200px;
+    height: 200px;
+    margin: 130px 0 0;
+    margin-left: 100px;
+    border: 5px solid #000000;
+}
+
+#controls {
+    width: 10em;
+    margin: auto;
+}
+
+.btn {
+    position: relative;
+    margin: 10px 0 0;
+    border: 3px solid #000000;
+    
+    line-height: 30px;
+}
+.btn p {
+    margin: 0;
+    text-align: center;
+}
+.btn:hover {
+    background: #ffffff;
+    color: #000000;
+}
+.btn:active {
+    background: #999999;
+}
