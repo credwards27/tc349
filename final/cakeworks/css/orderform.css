@@ -1,0 +1,39 @@
+/* main content */
+
+#main p:first-line {
+    color: #000000;
+    font-size: inherit;
+}
+#main form img {
+    width: 15%;
+    border: 2px solid #000000;
+    vertical-align: middle;
+}
+#main form input.spacer {
+    margin-left: 10%;
+}
+#main form h3 {
+    margin-bottom: 0;
+}
+#main form p {
+    margin-top: 0;
+}
+
+/* form items */
+
+#main input.dim {
+    width: 7%;
+}
+
+#layers {
+    width: 10%;
+}
+
+/* sidebar */
+
+#sidebar h3 {
+    margin-bottom: 0;
+}
+#sidebar p {
+    margin-top: 0;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CakeWorks</title>
+    
+    <link rel="stylesheet" type="text/css" href="../css/main.css" media="screen" />
+</head>
+
+<body>
+
+<div id="container">
+    
+    <header role="banner">
+    </header>
+    
+    <nav role="navigation">
+        <ul>
+            <a href="../"><li>The Cakes</li></a>
+            <a href="#"><li>The Process</li></a>
+            <a href="../company"><li>The Company</li></a>
+            <a href="../order"><li>Order</li></a>
+            <a href="#"><li>Contact Us</li></a>
+        </ul>
+    </nav>
+    
+    <div id="main" class="error">
+        <h1>Oops!</h1>
+        
+        <p>
+            We didn't find that order ID!
+            <br />
+            <br />
+            Try looking for it again.
+            
+            <form name="idorder" action="../errors/notfound.html">
+                Order ID: <input id="idtext" type="text" name="idsubmit" />
+                <input id="idsubmit" type="submit" value="Submit" />
+            </form>
+        </p>
+    </div>
+    
+    <div id="sidebar">
+        <h2>Still not working?</h2>
+        
+        <p>Email or call us and we'll figure out what's going on.
+        <br />
+        <br />
+        Email:
+        <br />
+        <strong>CakeWorks@email.com</strong>
+        <br />
+        <br />
+        Phone:
+        <br />
+        <strong>(123) 456-7890</strong></p>
+    </div>
+    
+    <footer role="contentinfo">
+        <p>&copy; 2012 CakeWorks (123) 457-7890 CakeWorks@email.com</p>
+    </footer>
+    
+</div> <!-- #container -->
+
+</body>
+</html>

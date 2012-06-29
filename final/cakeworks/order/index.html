@@ -2,12 +2,378 @@
 
 <html>
 <head>
-    <title>Placeholder</title>
+    <meta name="viewport" content="width=device-width" />
+    <title>Order</title>
+    
+    <link rel="stylesheet" type="text/css" href="../css/main.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../css/orderform.css" media="screen" />
 </head>
 
 <body>
 
-<p>This page doesn't exist yet!</p>
+<div id="container">
+    
+    <header role="banner">
+        <p class="quote home">Their cake was delicious, and ordering it was a breeze!</p>
+        <p class="quote home name">- Harry P.</p>
+    </header>
+    
+    <nav role="navigation">
+        <ul>
+            <a href="../"><li>The Cakes</li></a>
+            <a href="#"><li>The Process</li></a>
+            <a href="../company"><li>The Company</li></a>
+            <li class="current">Order</li>
+            <a href="#"><li>Contact Us</li></a>
+        </ul>
+    </nav>
+    
+    <div id="main">
+        <h1>Order a Cake for your Big Event!</h1>
+        
+        <p>Use this form to order your very own cake from CakeWorks! Check out the right side if you need help.</p>
+        <p>Ordering a wedding cake, or just want something more specific? <a href="#">Click here</a> to set up a special
+        order.</p>
+        
+        <form action="#">
+            
+            <!-- shape -->
+            <h3>Shape</h3>
+            <p><em>Circle, Rectangle, or Coffee Cake</em></p>
+            <input type="radio" name="shape" value="circle" />
+            <img src="../images/content/circle.png" alt="Circle" />
+            
+            <input class="spacer" type="radio" name="shape" value="rectangle" />
+            <img src="../images/content/rectangle.png" alt="Circle" />
+            
+            <input class="spacer" type="radio" name="shape" value="coffee" />
+            <img src="../images/content/coffee.png" alt="Circle" />
+            
+            <!-- size -->
+            <h3>Size</h3>
+            <p><em>Length &rarr; x Width &uarr; (if rectangle)
+            <br />
+            Diameter &larr; &rarr; (if circle, leave second box blank)
+            <br />
+            Coffee cakes only come in one size</em></p>
+            <input class="dim" type="text" name="len-dia" /> in. x <input class="dim" type="text" name="width" /> in.
+            
+            <!-- layers -->
+            <h3>Layers</h3>
+            <p><em>Number of layers</em></p>
+            <img src="../images/content/layers.png" alt="Layers" />
+            <select id="layers" name="layers">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <h3>Filling</h3>
+            <p><em>Skip if only one layer</em></p>
+            <p>
+                <select name="filling1">
+                    <option value="none">Choose filling</option>
+                    <option value="nfrost">Normal frosting</option>
+                    <option value="chfrost">Chocolate frosting</option>
+                    <option value="cofrost">Coconut frosting</option>
+                    <option value="pin">Pineapple</option>
+                    <option value="str">Strawberry</option>
+                    <option value="ras">Raspberry</option>
+                    <option value="lem">Lemon</option>
+                </select>
+                Above bottom layer
+            </p>
+            
+            <p>
+                <select name="filling2">
+                    <option value="none">Choose filling</option>
+                    <option value="nfrost">Normal frosting</option>
+                    <option value="chfrost">Chocolate frosting</option>
+                    <option value="cofrost">Coconut frosting</option>
+                    <option value="pin">Pineapple</option>
+                    <option value="str">Strawberry</option>
+                    <option value="ras">Raspberry</option>
+                    <option value="lem">Lemon</option>
+                </select>
+                Above second layer
+            </p>
+            
+            <p>
+                <select name="filling3">
+                    <option value="none">Choose filling</option>
+                    <option value="nfrost">Normal frosting</option>
+                    <option value="chfrost">Chocolate frosting</option>
+                    <option value="cofrost">Coconut frosting</option>
+                    <option value="pin">Pineapple</option>
+                    <option value="str">Strawberry</option>
+                    <option value="ras">Raspberry</option>
+                    <option value="lem">Lemon</option>
+                </select>
+                Above third layer
+            </p>
+            
+            <!-- flavor -->
+            <h3>Cake Flavors</h3>
+            <p><em>Choose a flavor for each layer</em></p>
+            
+            <p>
+                <select name="flavor1">
+                    <option value="yel">Yellow</option>
+                    <option value="white">White</option>
+                    <option value="choc">Chocolate</option>
+                    <option value="fvan">French Vanilla</option>
+                    <option value="redv">Red Velvet</option>
+                    <option value="coc">Coconut</option>
+                    <option value="pin">Pineapple</option>
+                    <option value="lem">Lemon</option>
+                    <option value="lime">Lime</option>
+                    <option value="ban">Banana</option>
+                    <option value="pb">Peanut Butter</option>
+                </select>
+                Bottom layer
+            </p>
+            
+            <p>
+                <select name="flavor2">
+                    <option value="none">If needed</option>
+                    <option value="yel">Yellow</option>
+                    <option value="white">White</option>
+                    <option value="choc">Chocolate</option>
+                    <option value="fvan">French Vanilla</option>
+                    <option value="redv">Red Velvet</option>
+                    <option value="coc">Coconut</option>
+                    <option value="pin">Pineapple</option>
+                    <option value="lem">Lemon</option>
+                    <option value="lime">Lime</option>
+                    <option value="ban">Banana</option>
+                    <option value="pb">Peanut Butter</option>
+                </select>
+                Second layer
+            </p>
+            
+            <p>
+                <select name="flavor3">
+                    <option value="none">If needed</option>
+                    <option value="yel">Yellow</option>
+                    <option value="white">White</option>
+                    <option value="choc">Chocolate</option>
+                    <option value="fvan">French Vanilla</option>
+                    <option value="redv">Red Velvet</option>
+                    <option value="coc">Coconut</option>
+                    <option value="pin">Pineapple</option>
+                    <option value="lem">Lemon</option>
+                    <option value="lime">Lime</option>
+                    <option value="ban">Banana</option>
+                    <option value="pb">Peanut Butter</option>
+                </select>
+                Third layer
+            </p>
+            
+            <p>
+                <select name="flavor4">
+                    <option value="none">If needed</option>
+                    <option value="yel">Yellow</option>
+                    <option value="white">White</option>
+                    <option value="choc">Chocolate</option>
+                    <option value="fvan">French Vanilla</option>
+                    <option value="redv">Red Velvet</option>
+                    <option value="coc">Coconut</option>
+                    <option value="pin">Pineapple</option>
+                    <option value="lem">Lemon</option>
+                    <option value="lime">Lime</option>
+                    <option value="ban">Banana</option>
+                    <option value="pb">Peanut Butter</option>
+                </select>
+                Top layer
+            </p>
+            
+            <!-- frosting -->
+            <h3>Base Frosting Color</h3>
+            <p><em>Choose your main frosting color, and also if you want a special frosting flavor</em></p>
+            
+            <p>
+                <select name="frostingcol">
+                    <option value="white">White</option>
+                    <option value="gray">Gray</option>
+                    <option value="lgray">Light Gray</option>
+                    <option value="dgray">Dark Gray</option>
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                    <option value="dred">Dark Red</option>
+                    <option value="pink">Pink</option>
+                    <option value="ppink">Pastel Pink</option>
+                    <option value="brown">Brown</option>
+                    <option value="dbrown">Dark Brown</option>
+                    <option value="orange">Orange</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="gyellow">Golden Yellow</option>
+                    <option value="fgreen">Forest Green</option>
+                    <option value="jgreen">Jade Green</option>
+                    <option value="bgreen">Bright Green</option>
+                    <option value="rblue">Royal Blue</option>
+                    <option value="nblue">Navy Blue</option>
+                    <option value="sblue">Sky Blue</option>
+                    <option value="purple">Purple</option>
+                    <option value="dpurple">Dark Purple</option>
+                    <option value="ppurple">Pastel Purple</option>
+                </select>
+            </p>
+            
+            <p><em>Special Frosting (may slightly alter color)</em>
+                <br />
+                <input type="radio" name="sfrosting" value="none" />None
+                <br />
+                <input type="radio" name="sfrosting" value="pb" />Peanut Butter
+                <br />
+                <input type="radio" name="sfrosting" value="cc" />Cream Cheese
+                <br />
+                <input type="radio" name="sfrosting" value="lem" />Lemon
+                <br />
+                <input type="radio" name="sfrosting" value="lime" />Lime
+                <br />
+                <input type="radio" name="sfrosting" value="coc" />White with shredded coconut
+            </p>
+            
+            <!-- text -->
+            <h3>Text</h3>
+            <p><em>Write your own text</em></p>
+            <textarea rows="5" cols="40"></textarea>
+            
+            <p><em>Choose a color for your text</em>
+                <br />
+                <select name="textcol">
+                    <option value="white">White</option>
+                    <option value="gray">Gray</option>
+                    <option value="lgray">Light Gray</option>
+                    <option value="dgray">Dark Gray</option>
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                    <option value="dred">Dark Red</option>
+                    <option value="pink">Pink</option>
+                    <option value="ppink">Pastel Pink</option>
+                    <option value="brown">Brown</option>
+                    <option value="dbrown">Dark Brown</option>
+                    <option value="orange">Orange</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="gyellow">Golden Yellow</option>
+                    <option value="fgreen">Forest Green</option>
+                    <option value="jgreen">Jade Green</option>
+                    <option value="bgreen">Bright Green</option>
+                    <option value="rblue">Royal Blue</option>
+                    <option value="nblue">Navy Blue</option>
+                    <option value="sblue">Sky Blue</option>
+                    <option value="purple">Purple</option>
+                    <option value="dpurple">Dark Purple</option>
+                    <option value="ppurple">Pastel Purple</option>
+                </select>
+            </p>
+            
+            <!-- image -->
+            <h3>Upload an Image</h3>
+            <p><em>Upload an optional image to have printed on edible paper</em></p>
+            <input type="file" name="imgupload" />
+            
+            <!-- details -->
+            <h3>Order Details</h3>
+            <p><em>Basic information for your order</em></p>
+            
+            <select name="method">
+                <option value="pickup">Pick-up</option>
+                <option value="deliver">Deliver</option>
+                <option value="setup">Deliver and set up</option>
+            </select>
+            <br />
+            
+            <input type="text" name="date" /> Date needed <em>(MO/DY/YEAR)</em>
+            <br />
+            
+            <input type="text" name="time" />
+            <select name="ap">
+                <option value="am">am</option>
+                <option value="pm">pm</option>
+            </select>
+            Time
+            <br />
+            
+            <input type="text" name="event" /> Type of event
+            <br />
+            
+            <input type="text" name="location" /> Location <em>(if delivering or setting up)</em>
+            <br />
+            
+            <input type="text" name="name" /> Your name
+            <br />
+            
+            <input type="text" name="email" />Email
+            <br />
+            
+            <input type="text" name="phone" />Phone number
+            <br />
+            
+            <textarea rows="10" cols="40" placeholder="Include any other important details"></textarea> Comments
+            
+            <!-- submit -->
+            <h3>Place your Order</h3>
+            <p><em>Check to make sure everything is correct</em></p>
+            
+            <p>Pricing and payment information will appear on the next page.</p>
+            <input type="submit" value="Place Order" />
+            
+        </form>
+    </div>
+    
+    <div id="orderid">
+        <h2>Your Order</h2>
+        <p>
+            <form name="idorder" action="../errors/notfound.html">
+                Order ID: <input id="idtext" type="text" name="id" />
+                <input id="idsubmit" type="submit" value="Submit" />
+            </form>
+        </p>
+    </div>
+    
+    <div id="sidebar">
+        <h2>How to Order</h2>
+        
+        <h3>Pick a Shape</h3>
+        <p>Choose from a variety of base cake shapes.</p>
+        
+        <h3>Pick a Size</h3>
+        <p>Specify the dimensions of the cake, or enter the number of people it needs to serve.</p>
+        
+        <h3>Choose How Many Layers</h3>
+        <p>You can stack up to four layers in one cake. If you want more than one layer, be sure to choose your filling
+        flavor too!</p>
+        
+        <h3>Choose your Flavors</h3>
+        <p>Mix and match flavors by layer.</p>
+        
+        <h3>Choose a Base Color</h3>
+        <p>What color of frosting would you like covering the whole cake?</p>
+        
+        <h3>Write your Own Text</h3>
+        <p>Enter in exactly what you want your cake to say. Don't forget to pick a color too!</p>
+        
+        <h3>Upload an image</h3>
+        <p>Upload an image if you want one printed on your cake. Don't forget to tell us where to put it on the cake in
+        the Comments box.</p>
+        
+        <h3>When do you need it?</h3>
+        <p>Tell us the date of your event, and we can have it ready for pickup, or delivered and set up for you!</p>
+        
+        <h3>Don't Forget Details</h3>
+        <p>Use the Comments box to give us any other details about your order (special coloring, text arrangement, image
+        placement, special designs, etc.)</p>
+        
+        <h3>Pricing</h3>
+        <p>Pricing will be calculated on the next page before selecting a payment type.</p>
+    </div>
+    
+    <footer role="contentinfo">
+        <p>&copy; 2012 CakeWorks (123) 457-7890 CakeWorks@email.com</p>
+    </footer>
+    
+</div> <!-- #container -->
 
 </body>
 </html>

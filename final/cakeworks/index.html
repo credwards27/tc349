@@ -13,18 +13,17 @@
 <div id="container">
     
     <header role="banner">
-        <img src="images/image.jpg" />
-        <p class="quote">The cake was great! I really liked it and the service was excellent!</p>
-        <p class="quote name">- Leeroy J.</p>
+        <p class="quote home">The cake was great! I really liked it and the service was excellent!</p>
+        <p class="quote home name">- Leeroy J.</p>
     </header>
     
     <nav role="navigation">
         <ul>
             <li class="current">The Cakes</li>
-            <li><a href="process">The Process</a></li>
-            <li><a href="company">The Company</a></li>
-            <li><a href="order">Order</a></li>
-            <li><a href="contact">Contact Us</a></li>
+            <a href="#"><li>The Process</li></a>
+            <a href="company"><li>The Company</li></a>
+            <a href="order"><li>Order</li></a>
+            <a href="#"><li>Contact Us</li></a>
         </ul>
     </nav>
     
@@ -32,7 +31,7 @@
         <p>Each cake is prepared by hand according to the Edwards family recipe. When the batter is just right, it's
         baked to perfection before being frosted and decorated to your heart's content!</p>
         
-        <p><img class="right" src="images/image.jpg" />
+        <p><img class="right" src="images/content/cake-home.jpg" alt="Wedding Cake" />
         CakeWorks has been making personalized cakes for almost 20 years, so we'll take whatever you
         throw at us! From weddings to birthdays, graduations, to retirements, family reuinions to block parties, our
         cakes are the perfect fit. Have an idea you want us to make? No problem! Custom and unique cakes are our
@@ -43,20 +42,24 @@
     
     <div id="orderid">
         <h2>Your Order</h2>
-        <p>ID:
+        <p>
+            <form name="idorder" action="errors/notfound.html">
+                Order ID: <input id="idtext" type="text" name="id" />
+                <input id="idsubmit" type="submit" value="Submit" />
+            </form>
         </p>
     </div>
     
     <div id="sidebar">
         <h2>News and Events</h2>
-        <a href=""><p><img src="images/image.jpg" />Last week's wedding was a huge success! The cake looked amazing, and
-        the guests had a wonderful time!</p></a>
+        <a href=""><p><img src="images/content/wedding-01.jpg" alt="Wedding Cake" />Last week's wedding was a huge
+        success! The cake looked amazing, and the guests had a wonderful time!</p></a>
         
-        <a href=""><p><img src="images/image.jpg" />Getting pumped for the Fourth of July! The Village Oaks parade and
-        party is going to be awesome this year!</p></a>
+        <a href=""><p><img src="images/content/fireworks.png" alt="Fireworks" />Getting pumped for the Fourth of July!
+        The Village Oaks parade and party is going to be awesome this year!</p></a>
         
-        <a href=""><p><img src="images/image.jpg" />CakeWorks is going to the National Cherry Festival in Traverse City!
-        It's going to be cherry-licious!</p></a>
+        <a href=""><p><img src="images/content/cherries.png" alt="Cherries" />CakeWorks is going to the National Cherry
+        Festival in Traverse City! It's going to be cherry-licious!</p></a>
     </div>
     
     <footer role="contentinfo">
